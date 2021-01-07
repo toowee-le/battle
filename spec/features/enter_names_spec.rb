@@ -2,8 +2,8 @@ feature "Enter names" do
   scenario "players can submit their names" do
     visit('/')
 
-    fill_in("Player 1", with: "Joe")
-    fill_in("Player 2", with: "Jamie")
+    fill_in(:player_1, with: "Joe")
+    fill_in(:player_2, with: "Jamie")
 
     click_button "Start"
 
