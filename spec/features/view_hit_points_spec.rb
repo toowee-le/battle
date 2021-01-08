@@ -1,5 +1,5 @@
-feature "Enter names" do
-  scenario "players can submit their names" do
+feature "View hit points" do
+  scenario "view player 2's hit points" do
     visit("/")
 
     fill_in(:player_1, with: "Joe")
@@ -7,6 +7,6 @@ feature "Enter names" do
 
     click_button "Start"
 
-    expect(page).to have_content('Joe vs. Jamie')
+    expect(page).to have_content('Jamie: 60 HP')
   end
 end
